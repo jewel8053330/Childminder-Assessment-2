@@ -1,0 +1,365 @@
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+
+header {
+  background-color: #ffffff;
+  padding: 20px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  color: #176b5b;
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  font-weight: 600;
+  color: #333333;
+}
+
+nav a:hover {
+  color: #176b5b;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 500px;
+  padding: 100px 8%;
+  background-color: #e8f5f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero h2 {
+  max-width: 650px;
+  margin: 0 0 20px;
+  font-size: 3rem;
+  line-height: 1.1;
+  color: #173b35;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 0 30px;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #4b5c58;
+}
+
+.hero button {
+  border: none;
+  border-radius: 8px;
+  padding: 14px 24px;
+  background-color: #176b5b;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #125548;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  header {
+    padding: 16px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  nav {
+    width: 100%;
+    gap: 18px;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    min-height: 450px;
+    padding: 60px 20px;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+/* Available Jobs Section */
+
+.jobs-section {
+  padding: 60px 8%;
+  background-color: #f7f7f7;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  color: #173b35;
+  margin-bottom: 10px;
+}
+
+.section-heading p {
+  color: #5b6b68;
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.job-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.job-card h3 {
+  color: #176b5b;
+  margin-top: 0;
+}
+
+.job-card p {
+  margin: 10px 0;
+  color: #444;
+}
+
+.details-button {
+  margin-top: 12px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #176b5b;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.details-button:hover {
+  background-color: #125548;
+}
+.bookings-section {
+  padding: 70px 8%;
+  background-color: #e8f5f1;
+}
+
+.bookings-section .section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.bookings-section h2 {
+  font-size: 2.2rem;
+  color: #173b35;
+  margin-bottom: 10px;
+}
+
+.bookings-section .section-heading p {
+  color: #4b5c58;
+}
+
+.bookings-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.booking-item {
+  background-color: white;
+  padding: 20px 24px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.booking-item strong {
+  color: #176b5b;
+  font-size: 1.1rem;
+}
+
+.booking-item span {
+  color: #176b5b;
+  font-weight: 600;
+}
+
+.no-bookings {
+  text-align: center;
+  color: #4b5c58;
+}
+@media (max-width: 700px) {
+  .jobs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Booking button */
+
+.book-button {
+  margin-left: 10px;
+  padding: 10px 18px;
+  border: 2px solid #176b5b;
+  border-radius: 6px;
+  background-color: white;
+  color: #176b5b;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.book-button:hover {
+  background-color: #e5f3f0;
+}
+
+.booking-message {
+  margin-top: 15px;
+  color: #176b5b;
+  font-weight: 600;
+}
+.availability-days {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.availability-days button {
+  padding: 12px 20px;
+  border: 2px solid #0f766e;
+  border-radius: 8px;
+  background: white;
+  color: #0f766e;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.availability-days button:hover {
+  background: #e6f4f1;
+}
+
+.availability-days .selected-day {
+  background: #0f766e;
+  color: white;
+}
+.save-availability {
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 28px;
+  background: #0f766e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.save-availability:hover {
+  background: #0b5f59;
+}
+.search-box {
+  display: block;
+  width: 100%;
+  max-width: 450px;
+  padding: 14px 18px;
+  margin: 30px auto;
+  border: 2px solid #0f766e;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  background: white;
+}
+
+.search-box:focus {
+  border-color: #115e59;
+  box-shadow: 0 0 6px rgba(15, 118, 110, 0.2);
+}
+.no-jobs {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin: 30px 0;
+}
+.clear-search {
+  display: block;
+  margin: 15px auto 0;
+  padding: 10px 20px;
+  background: #0f766e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.clear-search:hover {
+  background: #115e59;
+}
+.cancel-booking {
+  background: #b91c1c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.cancel-booking:hover {
+  background: #991b1b;
+}
+
+.booking-item {
+  display: grid;
+  grid-template-columns: 1.2fr 1.5fr 1fr auto;
+  align-items: center;
+  gap: 24px;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.booking-item strong {
+  color: #086b5c;
+  font-size: 22px;
+}
+
+.booking-details p {
+  margin: 8px 0;
+}
+
+@media (max-width: 900px) {
+  .booking-item {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
